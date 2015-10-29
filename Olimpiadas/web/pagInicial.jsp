@@ -1,65 +1,36 @@
-<%-- 
-    Document   : pagInicial
-    Created on : 05/10/2015, 16:40:40
-    Author     : Thayná
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
 <html>
     <head>
-        <title>Olimpiadas Escolares</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <style type="text/css">
-            .auto-style1 {
-                height: 23px;
-            }
-            .auto-style2 {
-                height: 23px;
-                width: 10px;
-            }
-        </style>
+        <title>Olimpíadas Escolares</title>
+		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <div id="conteiner">
-
-            <div id="top">
-                <h1>Olimpiadas Escolares</h1>
-            </div>
-            <h2>Pagina inicial </h2>
-
-            <div id="body">
-
-                <div id="blockDistinct">
-                    <table>
-                        <tr>
-                            <td class="auto-style1">
-                                <a href="Login.jsp">Login</a>
-                            </td>
-                            <td class="auto-style2"></td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style1">
-                                <a href="CadastroAluno.jsp">Cadastro Aluno</a>
-                            </td>
-                            <td class="auto-style2"></td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style1">
-                                <a href="excluirconta">Excluir conta</a>
-                            </td>
-                            <td class="auto-style2"></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="sair">Sair</a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-
+        <div id="header">
+			<div id="title"><p>Olimpíadas Escolares</p></div>
+			<div id="desc"><p>Seja bem-vindo!</p></div>
+		</div>
+		<div id="box">
+			<div id="menu"> 
+				<a href="Login.jsp">
+					Login
+				</a>
+				<a href="CadastroAluno.jsp">
+					Cadastro de Aluno
+				</a>
+			</div>
+		</div>
+		<div id="footer">
+			<p>
+				Desenvolvido por: Ana Paula Manhães, Gisele Fragoso e Thayná Rosário
+			</p>
+			<p>
+				CSS: Gisele Fragoso
+			</p>
+		</div>
     </body>
 </html>

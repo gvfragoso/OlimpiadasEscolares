@@ -1,64 +1,37 @@
-<%-- 
-    Document   : login
-    Created on : 05/10/2015, 16:48:32
-    Author     : ThaynÃ¡
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 	<head>
     		<title>Olimpiadas Escolares</title>
-    		<link rel="stylesheet" type="text/css" href="style.css" />
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    		<link href="forms.css" rel="stylesheet" type="text/css" media="all" />
+			<link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+			<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	</head>
-        <form method="post" action="Login">
+    <form method="post" action="Login">
 	<body>
-        	<div id="conteiner">
-			<div id="top">
-                		<h1>Olimpiadas Escolares</h1>
-            		</div>
-			<h2>FaÃ§a seu login</h2>
-			<div id="body">
-				<div id="blockDistinct">
-                    			<table>
-                        			<tr>
-                            				<td>
-                                				<h6>Login</h6>
-                            				</td>
-                            				<td>
-                                                            <input type="text" name="login" value="" size="50px" />
-                            				</td>
-                        			</tr>
-                        			<tr>
-                            				<td>
-								<h6>Senha</h6>
-                            				</td>
-                            				<td>
-                                                            <input type="password" name="senha" value="" size="50px" />
-                            				</td>
-                        			</tr>
-                        			<tr>
-                            				<td>
-                                                            <input type="submit" value="logar" name="login" />
-                            				</td>
-                        			</tr>
-                        			<tr>
-                            				<td>
-                                				<a href="CadastroAluno.jsp">NÃ£o tem uma conta? Cadastre-se</a>
-                            				</td>
-                        			</tr>
-                    			</table>
-                    			<br />
-                    			<table>
-                        			<tr>
-                            				<td>
-                                				
-                            				</td>
-                        			</tr>
-                    			</table>
-                		</div>
-            		</div>
-        	</div>
-            </form>
+        <div id="header">
+			<div id="title"><p>Olimpíadas Escolares</p></div>
+			<div id="desc"><p>Faça o seu login</p></div>
+		</div>
+		<div id="box">
+			<div id="titulo">
+				<table id="table">
+					<tr>
+						<td><h6>Login</h6></td>
+						<td><input type="text" name="login" value="" size="50px" /></td>
+					</tr>
+					<tr>
+						<td><h6>Senha</h6></td>
+						<td><input type="password" name="senha" value="" size="50px" /></td>
+					</tr>
+				</table>
+				<input type="submit" value="logar" name="login" />
+			</div>
+		</div>
+		<div id="linkCad">
+			<a href="CadastroAluno.jsp">Não tem uma conta? Cadastre-se!</a>
+		</div>
+	</form>
 	</body>
 </html>
