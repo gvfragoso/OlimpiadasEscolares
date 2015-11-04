@@ -20,7 +20,10 @@
 					Login
 				</a>
 				<a href="CadastroAluno.jsp">
-					Cadastro de Aluno
+					Cadastro de Alunos
+				</a>
+                                <a href="CadastroDesenvolvedor.jsp">
+					Cadastro de Organizadores
 				</a>
 			</div>
 		</div>

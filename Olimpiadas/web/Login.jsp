@@ -6,7 +6,6 @@
     		<link href="forms.css" rel="stylesheet" type="text/css" media="all" />
 			<link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
 			<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-			<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	</head>
     <form method="post" action="Login">
 	<body>
@@ -19,14 +18,14 @@
 				<table id="table">
 					<tr>
 						<td><h6>Login</h6></td>
-						<td><input type="text" name="login" value="" size="50px" /></td>
+						<td><input class="textbox"  type="text" name="login" value="" size="50px" /></td>
 					</tr>
 					<tr>
 						<td><h6>Senha</h6></td>
-						<td><input type="password" name="senha" value="" size="50px" /></td>
+						<td><input class="textbox" type="password" name="senha" value="" size="50px" /></td>
 					</tr>
 				</table>
-				<input type="submit" value="logar" name="login" />
+				<input class="botao" type="submit" value="logar" name="login" />
 			</div>
 		</div>
 		<div id="linkCad">

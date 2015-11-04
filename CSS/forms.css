@@ -2,6 +2,7 @@ body {
 	background-color: #fff;
 	margin: 0px;
 	padding: 0px;
+	font-family: 'Varela Round', sans-serif;
 }
 /*** header ***/
 
@@ -37,6 +38,7 @@ body {
 	border-bottom: solid 5px #5E574E;
 	border-top: solid 5px #5E574E;
 	text-align: center;
+	padding:10px;
 }
 
 #titulo {
@@ -78,4 +80,25 @@ body {
 	font-size: 8px;
 	text-align: center;
 	width: 100%;
+}
+
+.textbox {
+	border: solid #5E574E 2px;
+	background-color: #fff;
+}
+
+
+.textbox:focus {
+	border-top: solid 2px #fff;
+	border-bottom: solid 2px #fff;
+	border-left: solid 2px transparent;
+	border-right: solid 2px transparent;
+	outline: none;
+	background-color: #016D6B;
+}
+
+.botao {
+	border-radius: 10px;
+	background-color: #fff;
+	border: #5E574E solid 1px;
 }
