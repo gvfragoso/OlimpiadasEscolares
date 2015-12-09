@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import Entidades.Aluno;
-import Entidades.AlunoDAO;
+import Entidades.Organizador;
+import Entidades.OrganizadorDAO;
 import Entidades.ConectarBanco;
 
-@WebServlet(name = "login", urlPatterns = {"/Login"})
+@WebServlet(name = "loginOrg", urlPatterns = {"/LoginOrg"})
 
-public class Login extends HttpServlet
+public class LoginOrg extends HttpServlet
 {
 
     //private static final long serialVersionUID = 7633293501883840556L;
@@ -28,14 +28,14 @@ public class Login extends HttpServlet
 
         HttpSession session = request.getSession(); //obtem a sessao do usuario, caso exista
 
-        Aluno user = null;
-        String login = request.getParameter("login"); // Pega o Login vindo do formulario
-        String senha = request.getParameter("senha"); //Pega a senha vinda do formulario
+        Organizador user = null;
+        String siape = request.getParameter("siape"); // Pega o Login vindo do formulario
+        String  senhaorg = request.getParameter("senhaorg"); //Pega a senha vinda do formulario
 
         try
         {
-            AlunoDAO dao = new AlunoDAO(); //cria uma instancia do DAO usuario
-            user = dao.getAluno(login, senha);
+            OrganizadorDAO dao = new OrganizadorDAO(); //cria uma instancia do DAO usuario
+            user = dao.getOrganizador(siape, senhaorg);
         }
         catch (Exception e)
         {

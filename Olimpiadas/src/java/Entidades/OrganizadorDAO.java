@@ -8,25 +8,23 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import Entidades.Aluno;
+import Entidades.Organizador;
 import Entidades.ConectarBanco;
 import java.sql.SQLException;
 
-public class AlunoDAO extends ConectarBanco
+public class OrganizadorDAO extends ConectarBanco
 {
    
-    public void inserir(Aluno aluno)
+    public void inserir(Organizador organizador)
     {
         try
         {
             Connection conexao = CriaConexao();
-            PreparedStatement pstm = conexao.prepareStatement("Insert into aluno (nome, matricula, serie, login, senha, data) values (?,?,?,?,?,?)");
-            pstm.setString(1, aluno.getNome());
-            pstm.setString(2, aluno.getMatricula());
-            pstm.setString(3, aluno.getSerie());
-            pstm.setString(4, aluno.getLogin());
-            pstm.setString(5, aluno.getSenha());
-            pstm.setString(6, aluno.getData());
+            PreparedStatement pstm = conexao.prepareStatement("Insert into organizador (siape, nomeorg, cpforg, senhaorg) values (?,?,?,?)");
+            pstm.setString(1, organizador.getSiape());
+            pstm.setString(2, organizador.getNomeOrg());
+            pstm.setString(3, organizador.getCpfOrg());
+            pstm.setString(4, organizador.getSenhaOrg());
             pstm.execute();
             pstm.close();
             conexao.close();
@@ -37,14 +35,14 @@ public class AlunoDAO extends ConectarBanco
         }
     }
 
-    public boolean existe(Aluno aluno)
+    public boolean existe(Organizador organizador)
     {
         boolean achou = false;
         try
         {
             Connection conexao = CriaConexao();
-            PreparedStatement pstm = conexao.prepareStatement("Select * from aluno where matricula = ?");
-            pstm.setString(2, aluno.getMatricula());
+            PreparedStatement pstm = conexao.prepareStatement("select * from organizador where siape = ?");
+            pstm.setString(1, organizador.getSiape());
             ResultSet rs = pstm.executeQuery();
             if (rs.next())
             {
@@ -60,34 +58,31 @@ public class AlunoDAO extends ConectarBanco
         return achou;
     }
     
-    public Aluno getAluno( String login, String senha )
+    public Organizador getOrganizador( String siape, String senhaorg )
     {
         Connection conexao = CriaConexao();
         PreparedStatement ps = null;
         ResultSet rs = null;
         try
         {
-            ps = conexao.prepareStatement("select * from aluno where login = ? and senha = ?");
-            ps.setString(1, login);
-            ps.setString(2, senha);
- 
-            
+            ps = conexao.prepareStatement("select * from organizador where siape = ? and senha = ?");
+            ps.setString(1, siape);
+            ps.setString(4, senhaorg);
             rs = ps.executeQuery();
-            System.out.println("o nome da tabela é aluno, o  nome é " + login + " e a senha é " + senha);
+            System.out.println("o nome da tabela é organizador, o  siape é" + siape + " e a senha é" + senhaorg);
  
             
             
             if ( rs.next() )
             {
-                Aluno user = new Aluno();
-                user.setMatricula(login);
-                user.setSenha(senha);
+                Organizador user = new Organizador();
+                user.setSiape(siape);
  
                 return user;
             }
             else
             {
-                System.out.println("error");
+                System.out.println("Desculpa, estamos tentando resolver esse problema");
             }
         }
         catch (SQLException e)

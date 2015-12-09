@@ -4,10 +4,10 @@
 <html>
     <head>
         <title>Olimpíadas Escolares</title>
-		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div id="header">
@@ -17,12 +17,15 @@
 		<div id="box">
 			<div id="menu"> 
 				<a href="Login.jsp">
-					Login
+					Login de Alunos
+				</a>
+                                <a href="LoginOrganizador.jsp">
+					Login de Organizador
 				</a>
 				<a href="CadastroAluno.jsp">
 					Cadastro de Alunos
 				</a>
-                                <a href="CadastroDesenvolvedor.jsp">
+                                <a href="CadastroOrganizador.jsp">
 					Cadastro de Organizadores
 				</a>
 			</div>

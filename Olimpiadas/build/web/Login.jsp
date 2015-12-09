@@ -2,16 +2,16 @@
 <html>
 	<head>
     		<title>Olimpiadas Escolares</title>
-			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    		<link href="forms.css" rel="stylesheet" type="text/css" media="all" />
-			<link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-			<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <link href="forms.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	</head>
     <form method="post" action="Login">
 	<body>
         <div id="header">
 			<div id="title"><p>Olimpíadas Escolares</p></div>
-			<div id="desc"><p>Faça o seu login</p></div>
+			<div id="desc"><p>Faça o seu login, aluno</p></div>
 		</div>
 		<div id="box">
 			<div id="titulo">

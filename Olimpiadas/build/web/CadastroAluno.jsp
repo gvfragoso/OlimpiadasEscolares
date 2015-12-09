@@ -34,7 +34,7 @@
 						</tr>
 						<tr>
 							<td><h6>Senha</h6></td>
-							<td><input class="textbox" type="text" name="senha" value="" size="50px" /></td>
+							<td><input class="textbox" type="password" name="senha" value="" size="50px" /></td>
 						</tr>
 						<tr>
 							<td><h6>Data</h6></td>
