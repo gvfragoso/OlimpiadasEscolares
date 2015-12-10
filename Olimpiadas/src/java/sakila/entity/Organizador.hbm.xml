@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/12/2015 10:11:02 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="sakila.entity.Organizador" table="organizador" schema="public" optimistic-lock="version">
+        <id name="siape" type="string">
+            <column name="siape" />
+            <generator class="assigned" />
+        </id>
+        <property name="nomeorg" type="serializable">
+            <column name="nomeorg" />
+        </property>
+        <property name="cpforg" type="serializable">
+            <column name="cpforg" />
+        </property>
+        <property name="senhaorg" type="serializable">
+            <column name="senhaorg" />
+        </property>
+    </class>
+</hibernate-mapping>

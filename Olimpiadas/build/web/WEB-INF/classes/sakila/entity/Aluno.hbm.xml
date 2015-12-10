@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/12/2015 10:11:02 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="sakila.entity.Aluno" table="aluno" schema="public" optimistic-lock="version">
+        <id name="matricula" type="string">
+            <column name="matricula" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="nome" type="string">
+            <column name="nome" length="50" />
+        </property>
+        <property name="serie" type="string">
+            <column name="serie" length="20" />
+        </property>
+        <property name="login" type="string">
+            <column name="login" length="15" />
+        </property>
+        <property name="senha" type="string">
+            <column name="senha" length="15" />
+        </property>
+        <property name="data" type="string">
+            <column name="data" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
