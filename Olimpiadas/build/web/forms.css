@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29/10/2015, 14:11:43
+    Author     : GISELE VIEIRA FRAGOSO
+*/
+body {
+	background-color: #fff;
+	margin: 0px;
+	padding: 0px;
+}
+/*** header ***/
+
+#header {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+#title {
+	color: #016D6B;
+	font-family: 'Pacifico', sans-serif;
+	font-size:50px;
+}
+
+
+#desc {
+	text-align: center;
+	color: #5E574E;
+	font-size: 15px;
+	font-family: 'Varela Round', sans-serif;
+	margin-top: -40px;
+}
+
+/*** formulário ***/
+
+#box {
+	background-color: #016D6B;
+	width: 100%;
+	height: auto;
+	margin-top: 80px;
+	border-bottom: solid 5px #5E574E;
+	border-top: solid 5px #5E574E;
+	text-align: center;
+}
+
+#titulo {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	text-transform: uppercase;
+	/**border: 1px solid #3C3C3C;
+	border-radius: 4px;**/
+	/**padding: 2em 2em;**/
+}
+
+#table {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#linkCad {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#linkCad a{
+	text-decoration: none;
+	color: #5E574E;
+}
+
+/*** rodapé ***/
+
+#footer {
+	bottom: 0px;
+	position: absolute;
+	font-family: 'Varela Round', sans-serif;
+	color: #5E574E;
+	font-size: 8px;
+	text-align: center;
+	width: 100%;
+}
+
+/*** inputs  e botão ***/
+
+.textbox {
+	border: solid #5E574E 2px;
+	background-color: #fff;
+}
+
+
+.textbox:focus {
+	border-top: solid 2px #fff;
+	border-bottom: solid 2px #fff;
+	border-left: solid 2px transparent;
+	border-right: solid 2px transparent;
+	outline: none;
+	background-color: #016D6B;
+}
+
+.botao {
+	border-radius: 10px;
+	background-color: #fff;
+	border: #5E574E solid 1px;
+}
