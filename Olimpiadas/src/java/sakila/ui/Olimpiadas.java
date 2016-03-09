@@ -5,7 +5,7 @@
  */
 package sakila.ui;
 
-import Entidades.Aluno;
+import HibernatePersistenceAluno.Aluno;
 import java.util.List;
 import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
@@ -244,12 +244,12 @@ public class Olimpiadas extends javax.swing.JFrame {
         for(Object o : resultList) {
             Aluno actor = (Aluno)o;
             Vector<Object> oneRow = new Vector<Object>();
-            oneRow.add(actor.getNome());
-            oneRow.add(actor.getMatricula());
-            oneRow.add(actor.getSerie());
-            oneRow.add(actor.getLogin());
-            oneRow.add(actor.getSenha());
-            oneRow.add(actor.getData());
+            oneRow.add(actor.getNomeAluno());
+            oneRow.add(actor.getMatriculaAluno());
+            oneRow.add(actor.getSerieAluno());
+            oneRow.add(actor.getLoginAluno());
+            oneRow.add(actor.getSenhaAluno());
+            oneRow.add(actor.getDataAluno());
             tableData.add(oneRow);
         }
         resultTable.setModel(new DefaultTableModel(tableData, tableHeaders));
