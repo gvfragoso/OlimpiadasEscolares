@@ -28,11 +28,11 @@
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Login de Alunos</a></li>
-											<li><a href="elements.html">Login de Organizadores</a></li>
-											<li><a href="#">Cadastro de Alunos</a></li>
-											<li><a href="#">Cadastro de Organizadores</a></li>
+											<li><a href="pagInicial.jsp">Home</a></li>
+											<li><a href="Login.jsp">Login de Alunos</a></li>
+											<li><a href="LoginOrganizador.jsp">Login de Organizadores</a></li>
+											<li><a href="CadastroAluno.jsp">Cadastro de Alunos</a></li>
+											<li><a href="CadastroOrganizador.jsp">Cadastro de Organizadores</a></li>
 										</ul>
 									</div>
 								</li>
@@ -84,13 +84,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.scrollex.min.js"></script>
+			<script src="js/jquery.scrolly.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="js/main.js"></script>
 
 	</body>
 </html>

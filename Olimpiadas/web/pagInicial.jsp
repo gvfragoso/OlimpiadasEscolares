@@ -69,7 +69,7 @@
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+							<div class="image"><img src="C:/Users/TATIANA/Desktop/Olimpíadas Escolares/Olimpiadas/images/pic01.jpg" alt="" /></div><div class="content">
 								<h2>Qual a importância de uma Olimpíada Escolar?</h2>
 								<p style="text-align:justify">"A prática esportiva como instrumento educacional visa o desenvolvimento integral das crianças, 
 								jovens e adolescentes, capacita o sujeito a lidar com suas necessidades, desejos e expectativas, 
