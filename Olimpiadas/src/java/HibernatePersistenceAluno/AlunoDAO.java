@@ -54,7 +54,7 @@ public class AlunoDAO {
         Session sessao = ConectarBanco.conecta();
         try {
             System.out.println("tentando");
-            user = (Aluno) sessao.createQuery("from Usuario where login = ? and senha = ?").setParameter(0, login).setParameter(1, senha).uniqueResult();
+            user = (Aluno) sessao.createQuery("from aluno where login = ? and senha = ?").setParameter(0, login).setParameter(1, senha).uniqueResult();
             System.out.println("ok");
             if (user == null) {
                 System.out.println("erro");
